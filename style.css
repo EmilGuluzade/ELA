@@ -386,4 +386,52 @@ text-decoration: none;
 
 }
 
+                     /* wishlist pace */
+
+                     
+.wishlist-table{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}  
+.wishlist-table table{
+    width: 800px;
+    
+}   
+
+.wishlist-table td button{
+    border-radius: 4px;
+    background-color: red;
+    padding: 2px;
+    color: white;
+    border: 1px solid red;
+}
+.table-btn{
+    display: flex;justify-content: center;align-items: center;
+   
+}
+
+.wishlist-table tr:nth-child(even) {
+    background-color: lightblue;
+}
+.wishlist-table td{
+    padding: 5px;
+}
+
+
+.wishlist-table .table-title{
+    background-color: rgb(173, 176, 230);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
