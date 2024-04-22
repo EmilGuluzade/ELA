@@ -87,7 +87,7 @@ top: 13px;left: 10px;
     background-color: lightblue;
     outline: none;
 }
- button{
+.add-form  button{
     margin-top: 35px;
     width: 150px;
     height: 40px;
@@ -95,9 +95,7 @@ top: 13px;left: 10px;
     border: none;
     background-color: rgb(150, 144, 238);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
 }
 .add-form label{
     color: white;
