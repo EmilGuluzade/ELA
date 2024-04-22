@@ -6,12 +6,112 @@
 body{
     background: #F6F7F9;
 
+}
+header{
+   width: 1200px;margin: 0 auto;
+}
+.header-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; 
+    
+}
+
+.header-left{
+    display: flex;
+    gap: 20px;
+}
+.header-left .header-h1{
+font-family: Plus Jakarta Sans;
+font-size: 32px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.03em;
+color: #3563E9;
 
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
+.header-left input{
+
+border-radius: 10px;
+border: 1px solid #C3D4E966;
+width: 450px;
+height: 30px;
+border: 1px 0px 0px 0px;
+padding: 20px 40px ;
+
 }
+.header-input{
+   position: relative;
+}
+.header-input i{
+    position: absolute;
+top: 13px;left: 10px;
+}
+
+.header-right{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+.header-right a, i{
+    text-decoration: none;
+    color: #596780;
+
+}
+        /* Addform */
+
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-form{
+    
+    background:linear-gradient(90deg,#78E5D7,#9DAFE5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+     width: 390px;
+     height: 400px;
+}
+.add-form input{
+    margin-top: 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightblue;
+    outline: none;
+}
+.add-form  button{
+    margin-top: 35px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(150, 144, 238);
+    color: white;
+ 
+}
+.add-form label{
+    color: white;
+    font-size: 18px;
+}
+
+.container-form h2{
+    display: flex;
+    color: lightblue;
+    font-size: 35px;
+}
+
+.container{width: 1200px;
+    margin: 0 auto;
+}
+
 .hero {
   display: flex;
   padding: 80px 0;
@@ -89,7 +189,7 @@ body{
 
 .footer-one{display: flex;
     justify-content: space-between;
-    padding: 70px;}
+    padding: 70px 0;}
 .right-footer{
     display: flex;
     gap: 90px;
@@ -146,7 +246,7 @@ flex-direction: column;
 .footer-two{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0 ;
 }
 .right-ftr2{
     gap: 30px;
@@ -186,7 +286,7 @@ text-align: left;
     padding: 30px 0;
 }
 .card-body1 img{
-    width: 232px;
+    width: 232px;height: 120px;
     margin: 0 auto;
 }
 .card-body2{
@@ -254,9 +354,13 @@ border: 1px solid #3563E9;
 border-radius: 5px;
 
 }
-.popular-card .container{
+.popular .cards{
     display: flex;
    justify-content: space-between;
    gap: 15px;
+}
+
+.popular{
+    padding: 80px 0;
 }
 
