@@ -1,0 +1,36 @@
+$color_1: white;
+$background-color_1: red;
+$background-color_2: lightblue;
+$background-color_3: rgb(173, 176, 230);
+
+.wishlist-table {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	table {
+		width: 800px;
+	}
+	td {
+		button {
+			border-radius: 4px;
+			background-color: $background-color_1;
+			padding: 2px;
+			color: $color_1;
+			border: 1px solid red;
+		}
+		padding: 5px;
+	}
+	tr {
+		&:nth-child(even) {
+			background-color: $background-color_2;
+		}
+	}
+	.table-title {
+		background-color: $background-color_3;
+	}
+}
+.table-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,90 @@
+$color_1: #3563e9;
+$color_2: #13131399;
+$color_3: #1a202c;
+$font-family_1: Plus Jakarta Sans;
+
+.footer-one {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 0;
+}
+.right-footer {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 90px;
+}
+.left-footer {
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+	h3 {
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 48px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+	p {
+		color: $color_2;
+		width: 250px;
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		text-align: left;
+	}
+}
+.tittle-footer {
+	h3 {
+		color: $color_3;
+		font-family: $font-family_1;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: -0.02em;
+		text-align: left;
+	}
+	p {
+		color: $color_2;
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		text-align: left;
+	}
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.footer-two {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.right-ftr2 {
+	flex-wrap: wrap;
+	gap: 30px;
+	display: flex;
+	color: $color_3;
+	font-family: $font-family_1;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	text-align: right;
+}
+.left-ftr2 {
+	color: $color_3;
+	font-family: $font-family_1;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
