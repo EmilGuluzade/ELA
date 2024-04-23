@@ -64,7 +64,7 @@
     letter-spacing: -0.03em;
     text-align: left; }
   .hero__left p {
-    width: 284px;
+    width: 250px;
     height: 48px; }
 
 .hero__right {
@@ -120,7 +120,10 @@
   .add-form {
     max-width: 300px; }
   .header-right {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .hero-left-img img, .hero-img img {
+    width: 300px;
+    top: -40px; } }
 
 * {
   margin: 0;
@@ -261,6 +264,9 @@ button {
   justify-content: center;
   align-items: center; }
 
+footer {
+  background-color: #fff; }
+
 .footer-one {
   flex-wrap: wrap;
   display: flex;
@@ -345,6 +351,9 @@ button {
 header {
   max-width: 1200px;
   margin: 0 auto; }
+
+.h-c {
+  background-color: #fff; }
 
 .header-container {
   display: flex;

@@ -22,6 +22,7 @@ header {
 .header-left {
   display: flex;
   gap: 20px;flex-wrap: wrap;
+
 }
 .header-left .header-h1 {
   font-family: Plus Jakarta Sans;
@@ -42,6 +43,7 @@ header {
 .header-input { max-width: 450px;
   position: relative;
 }
+
 .header-input i {
   position: absolute;
   top: 13px;
@@ -207,6 +209,7 @@ i {
   display: flex;
   justify-content: space-between;
   padding: 70px 0;
+
 }
 .right-footer {flex-wrap: wrap;
   display: flex;
@@ -259,6 +262,7 @@ i {
   display: flex;
   flex-direction: column;
 }
+
 .footer-two {
   display: flex;flex-wrap: wrap;
   justify-content: space-between;
@@ -314,78 +318,7 @@ i {
   justify-content: space-between;
   align-items: center;
   padding-top: 18px;
-}
-.card-footer span {
-  color: #90a3bf;
-}
-.dollar {
-  display: flex;
-}
-.right-head-card i {cursor: pointer;
-  color: grey;
-  width: 24px;
-  height: 24px;
-}
-.left-head-card h3 {
-  color: #1a202c;
-  font-family: Plus Jakarta Sans;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
-.left-head-card p {
-  color: #90a3bf;
 
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: -0.02em;
-  text-align: left;
-}
-.left-footer-card button {
-  background: #3563e9;
-  width: 116px;
-  height: 44px;
-  top: 320px;
-  left: 177px;
-
-  gap: 8px;
-  border-radius: 4px 0px 0px 0px;
-  color: white;
-
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-
-  text-align: center;
-  border: 1px solid #3563e9;
-  border-radius: 5px;
-}
- .cards {
-  display: flex;flex-wrap: wrap;
-  justify-content:center;
-  gap: 15px;
-}
-
-.popular {
-  padding: 80px 0;
-}
-
-.two-title p {
-  color: #90a3bf;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20.16px;
-}
-.two-title {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
 }
 .two-title a {
   font-family: Plus Jakarta Sans;
@@ -398,8 +331,15 @@ i {
 
 
 
-button {
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
+
 
 
