@@ -19,7 +19,7 @@ function renderUI(list) {
             <td>${list[i].totalPrice} AZN</td>
             <td>${list[i].count} </td>
             <td>
-            <button id="w-btn" class="btn btn-danger " onclick="deleteItemFromWishlist(${list[i].item.id})">Delete</button>
+            <button id="w-btn" class="btn btn-danger" onclick="deleteItemFromWishlist(${list[i].item.id})">Delete</button>
             </td>
             <td>
             <button id="w-btn" class="btn btn-primary" onclick="addToBasket(${list[i].item.id})">Add</button>

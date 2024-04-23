@@ -77,7 +77,7 @@ function deleteCard(id) {
   localStorage.setItem("cars", JSON.stringify(cars));
   renderUI();
 }
-
+renderUI();
 let svgButtons = document.querySelectorAll(".fa-heart");
 
 svgButtons.forEach((button)=>{
@@ -118,4 +118,3 @@ function addToBasket(id) {
   }
 }
 
-renderUI();
