@@ -1,0 +1,130 @@
+$color_1: #90a3bf;
+$color_2: grey;
+$color_3: #1a202c;
+$color_4: white;
+$color_5: #3563e9;
+$font-family_1: Plus Jakarta Sans;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }a{
+      text-decoration: none !important;
+  }
+  body {
+    background: #f6f7f9;
+  }
+.card-header {
+	display: flex;
+	justify-content: space-between;
+}
+.card1 {
+	width: 270px;
+	background: #ffffff;
+	padding: 30px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-body1 {
+	padding: 30px 0;
+	img {
+		width: 232px;
+		height: 120px;
+		margin: 0 auto;
+	}
+}
+.card-body2 {
+	display: flex;
+	justify-content: space-between;
+	color: $color_1;
+}
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 18px;
+	span {
+		color: $color_1;
+	}
+}
+.dollar {
+	display: flex;
+}
+.right-head-card {
+	i {
+		cursor: pointer;
+		color: $color_2;
+		width: 24px;
+		height: 24px;
+	}
+}
+.left-head-card {
+	h3 {
+		color: $color_3;
+		font-family: $font-family_1;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+	p {
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 21px;
+		letter-spacing: -0.02em;
+		text-align: left;
+	}
+}
+.left-footer-card {
+	button {
+		background: #3563e9;
+		width: 116px;
+		height: 44px;
+		top: 320px;
+		left: 177px;
+		gap: 8px;
+		border-radius: 4px 0px 0px 0px;
+		color: $color_4;
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px;
+		text-align: center;
+		border: 1px solid #3563e9;
+		border-radius: 5px;
+	}
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+.popular {
+	padding: 80px 0;
+}
+.two-title {
+	p {
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 20.16px;
+	}
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	a {
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 20.16px;
+		color: $color_5;
+		text-decoration: none;
+	}
+}
+button {
+	cursor: pointer;
+}

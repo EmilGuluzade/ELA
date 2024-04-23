@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "ela",
+  "version": "1.0.0",
+  "main": "form.js",
+  "devDependencies": {},
+  "scripts": {
+  "sass":"node-sass assets/sass/main.scss -o assets/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
