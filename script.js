@@ -7,6 +7,12 @@ let wishList = [];
 if(JSON.parse(localStorage.getItem("cars"))){
    cars = JSON.parse(localStorage.getItem("cars"));
 }
+if (localStorage.getItem("basketItems")) {
+  basketItems = JSON.parse(localStorage.getItem("basketItems"));
+} else {
+  basketItems = [];
+  localStorage.setItem("basketItems", JSON.stringify(basketItems));
+}
 function renderUI() {
 innerHTML=""
   for (let i = 0; i < cars.length; i++) {
@@ -45,12 +51,13 @@ innerHTML=""
               <div class="card-footer">
                 <div class="left-footer-card">
                   <div class="dollar">
-                    <h3>$${cars[i].price}/</h3>
+                    <h3>AZN${cars[i].price}/</h3>
                     <span>day</span>
                   </div>
                 </div>
                 <div class="left-footer-card">
-                  <button onclick="deleteCard(${cars[i].id})">Remove</button>
+                  <button  id="removeBtn" onclick="deleteCard(${cars[i].id})">Remove</button>
+                  <button  id="addBtn" onclick="addToBasket(${cars[i].id})">Add Basket</button>
                 </div>
               </div>
             </div>
@@ -61,7 +68,7 @@ innerHTML=""
   }
   allCards.innerHTML=innerHTML
 }
-renderUI();
+
 
 function deleteCard(id) {
   let target =cars.find((data) => data.id == id);
@@ -70,7 +77,7 @@ function deleteCard(id) {
   localStorage.setItem("cars", JSON.stringify(cars));
   renderUI();
 }
-
+renderUI();
 let svgButtons = document.querySelectorAll(".fa-heart");
 
 svgButtons.forEach((button)=>{
@@ -93,5 +100,21 @@ svgButtons.forEach((button)=>{
 
   });
 });
-
+function addToBasket(id) {
+  let basketItem = basketItems.find((x) => x.item.id == id);
+  if (!basketItem) {
+    let target = cars.find((car) => car.id == id);
+    let newBasketItem = {
+      item: target,
+      count: 1,
+      totalPrice: target.price,
+    };
+    basketItems.push(newBasketItem);
+    localStorage.setItem("basketItems", JSON.stringify(basketItems));
+  } else {
+    basketItem.count++;
+    basketItem.totalPrice = basketItem.count * basketItem.item.price ;
+    localStorage.setItem("basketItems", JSON.stringify(basketItems));
+  }
+}
 
